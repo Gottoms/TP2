@@ -1,0 +1,576 @@
+/*
+ Theme Name:   astral Child
+ Theme URI:    http://example.com/astral-child/
+ Description:  astral Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     astral
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  astralchild
+*/
+h1, h2, h3, h4, h5, h6 {
+  color: #1b97b6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #d8d8d8 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.site-main h1 {
+  padding: 40px 0 40px 0;
+}
+
+#navbarNavDropdown #menu-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#navbarNavDropdown #menu-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+li a:hover {
+  color: #34d6ff !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+}
+
+li a:hover:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 95%;
+  /* Change this to whatever width you want. */
+  /* This creates some space between the element and the border. */
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding-top: 1%;
+  border-bottom: 1px solid white;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+li a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0 !important;
+}
+
+li a:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  border-bottom: 1px solid white;
+  padding-top: 1%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.astral_blog a.single {
+  background: #7a7a7a;
+  -webkit-transition: background .1s;
+  transition: background .1s;
+}
+
+.astral_blog a.single:hover {
+  background: #adadad;
+}
+
+p {
+  font-weight: bold;
+}
+
+body {
+  overflow: auto;
+}
+
+.animation1 {
+  -webkit-animation: animationRectangle1;
+          animation: animationRectangle1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  text-align: center;
+  border-radius: 25px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  background-color: lightblue;
+  margin-top: 10%;
+  margin-left: 25%;
+  border: 1px solid black;
+  width: 50%;
+  height: 40px;
+}
+
+.animation2 {
+  -webkit-animation: animationRectangle2;
+          animation: animationRectangle2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  text-align: center;
+  border-radius: 25px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  background-color: lightcoral;
+  margin-top: 10%;
+  margin-left: 25%;
+  border: 1px solid black;
+  width: 50%;
+  height: 40px;
+}
+
+.experience {
+  -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 1s;
+  transition: -webkit-transform 1s, -webkit-box-shadow 1s;
+  transition: transform 1s, box-shadow 1s;
+  transition: transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s;
+  margin-top: 5%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.experience h3 {
+  opacity: 0;
+  -webkit-transition: opacity 1;
+  transition: opacity 1;
+  position: absolute;
+  color: white;
+  left: 25%;
+  width: 50%;
+  top: 25%;
+}
+
+.animtrois {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experience:hover {
+  -webkit-transform: translate(0px, -5px);
+          transform: translate(0px, -5px);
+  -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 1s;
+  transition: -webkit-transform 1s, -webkit-box-shadow 1s;
+  transition: transform 1s, box-shadow 1s;
+  transition: transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s;
+  -webkit-box-shadow: -2px 54px 24px -20px rgba(0, 0, 0, 0.31);
+  box-shadow: -2px 54px 24px -20px rgba(0, 0, 0, 0.31);
+}
+
+.experience:hover h3 {
+  opacity: 1;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+.experience:hover .rectangle1 {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scaleX(0) translate(0px, -1px);
+          transform: scaleX(0) translate(0px, -1px);
+}
+
+.experience:hover .rectangle2 {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scaleX(0) translate(0px, -1px);
+          transform: scaleX(0) translate(0px, -1px);
+}
+
+#experience1 {
+  background-color: #944949;
+  margin-left: 23vw;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+}
+
+.rectangle1 {
+  background-color: #350000;
+  width: 50%;
+  height: 150px;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  float: left;
+  clear: left;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  opacity: 1;
+}
+
+.rectangle2 {
+  background-color: #350000;
+  width: 50%;
+  height: 150px;
+  opacity: 1;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  float: right;
+  clear: right;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.lirePost {
+  border: none;
+  padding: 10px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+}
+
+.lirePost:hover {
+  background-color: #7cce7c;
+}
+
+.active {
+  color: red;
+}
+
+.divConference {
+  background-color: rgba(255, 255, 255, 0.63) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.divConference p {
+  display: inline-block;
+  margin-left: 2%;
+  width: 50%;
+  height: 180px;
+  padding-top: 3%;
+}
+
+.divConference img {
+  float: left;
+  clear: both;
+}
+
+.oFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.oPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px 2px 5px 2px;
+}
+
+.oPost a {
+  color: black;
+}
+
+h6 {
+  text-align: center;
+}
+
+h6 p {
+  font-size: 3em;
+}
+
+.container .nouvelle_article, .container .conference_article {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .nouvelle_article::after, .container .conference_article::after {
+  content: " ";
+  width: 80%;
+  height: 1px;
+  background-color: gray;
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
+.card-title a {
+  font-size: 1.5em;
+  -webkit-transition: color .1s;
+  transition: color .1s;
+}
+
+.card-title a:hover {
+  color: #acacac;
+}
+
+.widget, .widget_categories, #widget_pages {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes animationRectangle1 {
+  from {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+    opacity: 0;
+    background-color: transparent;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+    background-color: lightblue;
+  }
+}
+
+@keyframes animationRectangle1 {
+  from {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+    opacity: 0;
+    background-color: transparent;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+    background-color: lightblue;
+  }
+}
+
+@-webkit-keyframes animationRectangle2 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0;
+    border-radius: 0px;
+    height: 40px;
+  }
+  25% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0.25;
+    border-radius: 5px;
+    height: 80px;
+    padding-top: 0.6%;
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0.50;
+    border-radius: 10px;
+    height: 40px;
+  }
+  75% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0.75;
+    border-radius: 15px;
+    height: 80px;
+    padding-top: 0.6%;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0.75;
+    border-radius: 20px;
+    height: 40px;
+  }
+}
+
+@keyframes animationRectangle2 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0;
+    border-radius: 0px;
+    height: 40px;
+  }
+  25% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0.25;
+    border-radius: 5px;
+    height: 80px;
+    padding-top: 0.6%;
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0.50;
+    border-radius: 10px;
+    height: 40px;
+  }
+  75% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0.75;
+    border-radius: 15px;
+    height: 80px;
+    padding-top: 0.6%;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0.75;
+    border-radius: 20px;
+    height: 40px;
+  }
+}
+
+h1 p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.oGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[30];
+      grid-template-rows: repeat(30, 1fr);
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 128, 128, 0.205);
+  padding: 2px;
+}
+
+.oGrid div {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.oGrid div p {
+  text-align: center;
+  width: 100%;
+  height: 10px;
+  margin-top: 15px;
+}
+
+.category a.grid_link {
+  margin-top: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: black;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.category a.grid_link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #303030;
+}
+
+.mois0 {
+  background-color: #ff6767;
+  height: auto;
+}
+
+.mois1 {
+  background-color: #67ffb8;
+  height: auto;
+}
+
+.mois2 {
+  background-color: #67d4ff;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */

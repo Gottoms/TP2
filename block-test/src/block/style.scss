@@ -1,0 +1,25 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-block-block-test  {
+  background: lightblue;
+  border: 1px solid $black;
+  border-radius:25px;
+  color: $black;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+  transition: all 1s;
+}
+
+.wp-block-cgb-block-block-test:hover  {
+  transform:scale(1.1);
+  transition:all 1s;
+  -webkit-box-shadow: 0px 87px 107px -73px rgba(0,0,0,0.56);
+-moz-box-shadow: 0px 87px 107px -73px rgba(0,0,0,0.56);
+box-shadow: 0px 87px 107px -73px rgba(0,0,0,0.56);
+}
+
